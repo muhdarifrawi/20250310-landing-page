@@ -34,6 +34,10 @@ $enable-dark-mode: true;
     scroll-snap-align: start;
 }
 
+.row-height {
+    height:100%;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
 
 body {

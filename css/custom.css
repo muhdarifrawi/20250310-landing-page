@@ -11292,6 +11292,10 @@ textarea.form-control-lg {
   scroll-snap-align: start;
 }
 
+.row-height {
+  height: 100%;
+}
+
 body {
   font-family: "Inter";
   font-weight: 400;
