@@ -9,39 +9,117 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-secondary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu">
+    <div class="scroll-container">
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f5ffd9;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Custom Webpages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Learning and Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                    <!-- <ul class="navbar-nav me-auto">
+                        <button class="btn btn-link nav-link dropdown-toggle" id="bd-theme" type="button"
+                            aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static"
+                            aria-label="Toggle theme (dark)">
+                            <svg class="bi my-1 theme-icon-active">
+                                <use href="#moon-stars-fill"></use>
+                            </svg>
+                            <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                    </li>
-                </ul>
+                    </ul> -->
+
+                </div>
+                <!-- <button class="btn btn-primary me-auto" onclick="toggleTheme()">Toggle Theme</button> -->
+
+
+
+            </div>
+        </nav>
+        <div id="home" class="section-height container py-5">
+            <div class="row pt-4">
+                <div class="col">
+                    <h1>Your Business Page - Without the Hassle</h1>
+                    <p class="pt-3 pt-lg-5">
+                        Let us help you out on creating your landing page. Whether you're a small
+                        business owner, home based or a large one, we have what you need!
+                    </p>
+                </div>
+                <div class="col">
+
+                </div>
             </div>
         </div>
-    </nav>
+        <div id="custom-webpage" class="section-height container py-5">
+            <div class="row py-3">
+                <h2>Get Your Own Custom Webpage</h2>
+                <div class="col">
+                    <p>
+                        Let us know what you have in mind and we'll make it for you!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="learning-education" class="section-height container py-5">
+            <div class="row py-3">
+                <h2>Learn Webpage Design</h2>
+                <div class="col">
+                    <p>
+                        Learn all about webpage design and building with our
+                        program <strong>tailored for beginners</strong>.
+                    </p>
+                    <p>
+                        <strong>No time?</strong> No worries. We'll work with you
+                        to get you to where you want to be.
+                    </p>
+                    <p>
+                        No fixed commitment needed! We'll <strong>modularise the Learning</strong>
+                        for you.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="call-now" class="section-height container py-5">
+            <div class="row py-3">
+                <h2>Talk to us</h2>
+                <p>
+                    We're more than happy to hear from you.
+                </p>
+            </div>
+        </div>
+        <div id="about" class="section-height container py-5">
+            <div class="row py-3">
+                <h2>About</h2>
+                <p>
+                    We're more than happy to hear from you.
+                </p>
+            </div>
+        </div>
+    </div>
+
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 
