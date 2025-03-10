@@ -1,0 +1,92 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+$primary: #375732;
+$secondary: #98ca91;
+$accent: #56b446;
+$body-bg-light: #e8eee7;
+$body-color-light: #181c17;
+$body-bg-dark: #121811;
+$body-color-dark: #e4e8e3;
+
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary
+);
+
+@import "../bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+// $themes: (
+//     light: (text: #181c17,
+//         background: #e8eee7,
+//         primary: #375732,
+//         secondary: #98ca91,
+//         accent: #56b446,
+//     ),
+//     dark: (text: #e4e8e3,
+//         background: #121811,
+//         primary: #adcda8,
+//         secondary: #3d6e35,
+//         accent: #5cb94b,
+//     ),
+// );
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
+
+body {
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Inter';
+    font-weight: 700;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* 16px */
+
+h1 {
+    font-size: 4.210rem;
+    /* 67.36px */
+}
+
+h2 {
+    font-size: 3.158rem;
+    /* 50.56px */
+}
+
+h3 {
+    font-size: 2.369rem;
+    /* 37.92px */
+}
+
+h4 {
+    font-size: 1.777rem;
+    /* 28.48px */
+}
+
+h5 {
+    font-size: 1.333rem;
+    /* 21.28px */
+}
+
+small {
+    font-size: 0.750rem;
+    /* 12px */
+}
