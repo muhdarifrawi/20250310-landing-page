@@ -225,10 +225,47 @@
                     </div>
                 </div>
                 <div class="col">
-                    <form id="query-form">
+                    <form id="query-form" class="pt-5">
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" name="useremail" placeholder="name@example.com">
+                            <input type="text" class="form-control" id="nameInput" name="name"
+                                placeholder="John Doe">
+                            <label for="floatingInput">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="contactInput" name="contact"
+                                placeholder="6512345678">
+                            <label for="floatingInput">Contact Number</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="emailInput" name="email"
+                                placeholder="name@example.com">
                             <label for="floatingInput">Email address</label>
+                        </div>
+                        <label class="form-check-label mb-3">
+                            Request Type :
+                        </label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="custom-webpage" id="webpageQuery" name="queryGroup">
+                            <label class="form-check-label" for="webpageQuery">
+                                Query for Custom Webpage
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="learn-webpage" id="learningQuery" name="queryGroup">
+                            <label class="form-check-label" for="learningQuery">
+                                Learn Webpage Design
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="others" id="otherQuery" name="queryGroup">
+                            <label class="form-check-label" for="otherQuery">
+                                Others
+                            </label>
+                        </div>
+                        <div class="form-floating my-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="commentInput" name="comments"
+                                style="height: 100px"></textarea>
+                            <label for="commentInput">Comments</label>
                         </div>
                         <button type="submit" class="btn btn-primary mb-3" id="wa-btn">
                             Send Whatsapp Message
@@ -243,7 +280,7 @@
         <div id="about" class="section-height container py-5">
             <div class="row py-3 row-height">
                 <div class="col">
-                    
+
                 </div>
                 <div class="col d-flex align-items-center">
                     <div>
