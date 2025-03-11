@@ -11293,6 +11293,7 @@ textarea.form-control-lg {
 
 .snap-child {
   scroll-snap-align: start;
+  scroll-margin: 40px;
 }
 
 .row-height {
