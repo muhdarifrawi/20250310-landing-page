@@ -31,6 +31,9 @@ $enable-dark-mode: true;
 
 .section-height {
     height: 100%;
+}
+
+.snap-child {
     scroll-snap-align: start;
 }
 

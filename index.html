@@ -64,7 +64,7 @@
 
             </div>
         </nav>
-        <div id="home" class="section-height container py-4">
+        <div id="home" class="snap-child section-height container py-4">
             <div class="row pt-5 mt-5">
                 <div class="col d-flex align-items-center">
                     <div>
@@ -80,13 +80,13 @@
                     <img src="assets/images/home-laptop.jpg" class="img-fluid" alt="man at home with laptop">
                 </div>
             </div>
-            <div class="row pt-5">
+            <div class="row pt-5 d-none d-xl-block">
                 <dotlottie-player class="scroll-icon ms-auto me-auto"
                     src="assets/icons/Animation - 1741622506981.lottie" autoplay loop />
             </div>
         </div>
-        <div id="custom-webpage" class="section-height container py-5">
-            <div class="row py-1 py-md-5">
+        <div id="custom-webpage" class="snap-child container py-5">
+            <div class="row pt-5 py-md-5 d-flex flex-column-reverse flex-md-row">
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div>
                         <h2>Get Your Own Custom Webpage</h2>
@@ -95,15 +95,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-img">
+                <div class="col-12 col-lg-5 col-img">
                     <img src="assets/images/discuss-webpage.jpg" class="rounded w-100"
                         alt="two people discussing about webpage on laptop and phone">
                 </div>
             </div>
-            <div class="row py-1 py-md-5">
+            <div class="row py-5 mt-md-5">
                 <div class="col-12 overflow-auto">
                     <div class="d-flex">
-                        <div class="col">
+                        <div class="col mx-3">
                             <div class="card h-100" style="width: 18rem;">
                                 <div class="card-body">
                                     <h5 class="card-title">Landing Page</h5>
@@ -118,7 +118,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col mx-3">
                             <div class="card h-100" style="width: 18rem;">
                                 <div class="card-body">
                                     <h5 class="card-title">Custom Landing Page</h5>
@@ -133,7 +133,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col mx-3">
                             <div class="card h-100" style="width: 18rem;">
                                 <div class="card-body">
                                     <h5 class="card-title">E-commerce Site</h5>
@@ -152,13 +152,13 @@
                 </div>
             </div>
         </div>
-        <div id="learning-education" class="section-height container py-5">
-            <div class="row py-5">
-                <div class="col-12 col-md-4 col-img">
-                    <img src="assets/images/learning.jpg" class="rounded w-100 float-end pe-5 me-5"
+        <div id="learning-education" class="snap-child container py-5">
+            <div class="row pt-5 py-md-5">
+                <div class="col-12 col-md-5 col-img">
+                    <img src="assets/images/learning.jpg" class="rounded w-100 float-end"
                         alt="a person studying">
                 </div>
-                <div class="col-12 d-flex align-items-center">
+                <div class="col-12 col-md-6 d-flex align-items-center">
                     <div>
                         <h2>Learn Webpage Design</h2>
                         <p class="pt-3">
@@ -176,10 +176,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row py-5">
+            <div class="row py-1 py-md-3">
                 <div class="col-12 overflow-auto">
                     <div class="d-flex">
-                        <div class="col">
+                        <div class="col mx-3">
                             <div class="card h-100" style="width: 18rem;">
                                 <div class="card-body">
                                     <h5 class="card-title">Intro Workshop</h5>
@@ -195,7 +195,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col mx-3">
                             <div class="card h-100" style="width: 18rem;">
                                 <div class="card-body">
                                     <h5 class="card-title">Full-length Workshop</h5>
@@ -211,7 +211,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col mx-3">
                             <div class="card h-100" style="width: 18rem;">
                                 <div class="card-body">
                                     <h5 class="card-title">Custom Classes</h5>
@@ -231,9 +231,9 @@
                 </div>
             </div>
         </div>
-        <div id="call-now" class="section-height container py-5">
+        <div id="call-now" class="snap-child container py-5">
             <div class="row py-3 row-height">
-                <div class="col d-flex align-items-center">
+                <div class="col-12 col-md-6 d-flex align-items-center">
                     <div>
                         <h2>Talk to Us</h2>
                         <p class="pt-3">
@@ -241,7 +241,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-6">
                     <form id="query-form" class="pt-3">
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="nameInput" name="name" placeholder="John Doe"
@@ -291,22 +291,30 @@
                             <input type="text" class="form-control" id="captchaAnswer" name="captchaAnswer" required>
                             <label id="captchaQuestion" for="captchaAnswer">Captcha</label>
                         </div>
-                        <button type="submit" class="btn btn-primary mb-3" id="wa-btn">
-                            Send Whatsapp Message
-                        </button>
-                        <button type="submit" class="btn btn-primary mb-3" id="tele-btn">
-                            Send Telegram Message
-                        </button>
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-primary mb-3" id="wa-btn">
+                                    Send Whatsapp Message
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-primary mb-3" id="tele-btn">
+                                    Send Telegram Message
+                                </button>
+                            </div>
+                        </div>
+                        
+                        
                     </form>
                 </div>
             </div>
         </div>
-        <div id="about" class="section-height container py-5">
+        <div id="about" class="snap-child section-height container py-5">
             <div class="row py-3 row-height">
-                <div class="col">
+                <div class="col-12 col-md-6">
 
                 </div>
-                <div class="col d-flex align-items-center">
+                <div class="col-12 col-md-6 d-flex align-items-center">
                     <div>
                         <h2>About</h2>
                         <p class="pt-3">
