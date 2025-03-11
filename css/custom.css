@@ -11296,6 +11296,26 @@ textarea.form-control-lg {
   height: 100%;
 }
 
+.scroll-icon {
+  height: 80px;
+  width: 80px;
+}
+
+#navbar .nav-link.active {
+  color: #56b446 !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.15rem !important;
+  text-underline-offset: 0.3rem;
+}
+
+.col-img {
+  height: 40vh;
+}
+
+.thumb-img {
+  height: 100%;
+}
+
 body {
   font-family: "Inter";
   font-weight: 400;

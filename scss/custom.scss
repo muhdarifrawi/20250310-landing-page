@@ -26,15 +26,37 @@ $enable-dark-mode: true;
 .scroll-container {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height:100vh;
+    height: 100vh;
 }
 
 .section-height {
-    height:100%;
+    height: 100%;
     scroll-snap-align: start;
 }
 
 .row-height {
+    height: 100%;
+}
+
+.scroll-icon {
+    height: 80px;
+    width: 80px;
+}
+
+#navbar {
+    .nav-link.active {
+        color: $accent !important;
+        text-decoration: underline !important;
+        text-decoration-thickness: 0.15rem !important;
+        text-underline-offset: 0.3rem;
+    }
+}
+
+.col-img {
+    height:40vh;
+}
+
+.thumb-img {
     height:100%;
 }
 
