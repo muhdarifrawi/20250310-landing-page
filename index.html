@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js">
-	</script>
+    </script>
     <link rel="stylesheet" href="css/custom.css">
     <title>Document</title>
 </head>
@@ -77,14 +77,12 @@
                     </div>
                 </div>
                 <div class="col">
-                    <img src="assets/images/home-laptop.jpg" class="img-fluid" 
-                    alt="man at home with laptop">
+                    <img src="assets/images/home-laptop.jpg" class="img-fluid" alt="man at home with laptop">
                 </div>
             </div>
             <div class="row pt-5">
                 <dotlottie-player class="scroll-icon ms-auto me-auto"
-                src="assets/icons/Animation - 1741622506981.lottie" 
-                autoplay loop/>
+                    src="assets/icons/Animation - 1741622506981.lottie" autoplay loop />
             </div>
         </div>
         <div id="custom-webpage" class="section-height container py-5">
@@ -98,8 +96,8 @@
                     </div>
                 </div>
                 <div class="col col-img">
-                    <img src="assets/images/discuss-webpage.jpg" class="rounded thumb-img" 
-                    alt="two people discussing about webpage on laptop and phone">
+                    <img src="assets/images/discuss-webpage.jpg" class="rounded thumb-img"
+                        alt="two people discussing about webpage on laptop and phone">
                 </div>
             </div>
             <div class="row py-5">
@@ -150,8 +148,8 @@
         <div id="learning-education" class="section-height container py-5">
             <div class="row py-5">
                 <div class="col col-img">
-                    <img src="assets/images/learning.jpg" class="rounded thumb-img float-end pe-5 me-5" 
-                    alt="a person studying">
+                    <img src="assets/images/learning.jpg" class="rounded thumb-img float-end pe-5 me-5"
+                        alt="a person studying">
                 </div>
                 <div class="col d-flex align-items-center">
                     <div>
@@ -226,12 +224,26 @@
                         </p>
                     </div>
                 </div>
+                <div class="col">
+                    <form id="query-form">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" name="useremail" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-3" id="wa-btn">
+                            Send Whatsapp Message
+                        </button>
+                        <button type="submit" class="btn btn-primary mb-3" id="tele-btn">
+                            Send Telegram Message
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
         <div id="about" class="section-height container py-5">
             <div class="row py-3 row-height">
                 <div class="col">
-
+                    
                 </div>
                 <div class="col d-flex align-items-center">
                     <div>
@@ -253,6 +265,7 @@
     </div>
 
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/form.js"></script>
 </body>
 
 </html>
