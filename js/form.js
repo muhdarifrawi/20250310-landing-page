@@ -1,24 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
     let formElement = document.querySelector("#query-form");
 
-    mathCaptcha()
+    // mathCaptcha()
 
     formElement.addEventListener("submit", (event) => {
         handleForm(event);
     });
 })
 
+let num1;
+let num2;
+
 function mathCaptcha(){
-    let num1 = Math.floor(Math.random() * 10) + 1;
-    let num2 = Math.floor(Math.random() * 10) + 1;
-    let correctAnswer = num1 + num2;
+    num1 = Math.floor(Math.random() * 10) + 1;
+    num2 = Math.floor(Math.random() * 10) + 1;
+    
     
     document.getElementById("captchaQuestion").innerText = `What is ${num1} + ${num2}?`;
 
     document.getElementById("contactForm").addEventListener("submit", function(event) {
+        let correctAnswer = num1 + num2;
         let userAnswer = parseInt(document.getElementById("captchaAnswer").value);
         if (userAnswer !== correctAnswer) {
-            alert("Incorrect CAPTCHA answer!");
+            console.log("Incorrect CAPTCHA answer!");
             event.preventDefault();
         }
     });
