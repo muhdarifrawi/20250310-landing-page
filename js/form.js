@@ -73,7 +73,7 @@ function handleForm(event) {
         window.open(whatsappURL, "_blank");
     } else if (event.submitter.id === "tele-btn") {
         console.log("Telegram");
-        let telegramURL = `https://t.me/hallasolution?text=${encodedText}`;
+        let telegramURL = `https://t.me/hallasolutions?text=${encodedText}`;
         window.open(telegramURL, "_blank");
     }
 }
