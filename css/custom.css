@@ -11281,14 +11281,20 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@media only screen and (max-width: 400px) {
+  .section-height {
+    height: initial;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .section-height {
+    height: 100%;
+  }
+}
 .scroll-container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
-}
-
-.section-height {
-  height: 100%;
 }
 
 .snap-child {
